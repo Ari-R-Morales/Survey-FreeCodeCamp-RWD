@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <title>Book of the Month Survey Form</title>
+        <link rel="stylesheet" href="styles.css" />
+    </head>
+    <body>
+        <div class="shape">
+            <main>
+                <h1 id="title"> Book of the Month Survey Form</h1>
+                <p class="thank-you" id="description">Thank you for your input!</p>
+                <form id="survey-form">
+                    <hr>
+                    <label id="name-label" for="name">Name <input class="text-box" id="name" type="text" required placeholder="First Last" /></label>
+                    <label id="email-label" for="email">Email <input class="text-box" id="email" type="email" required placeholder="FirstLast@example.com" /></label>
+                    <label id="number-label" for="number">Age <input class="text-box" id="number" type="number" min="13" max="120" placeholder="Age" /></label>
+                    <label id="role-label" for="role">What feature do you value the most? <select id="dropdown" required>
+                        <option value="" disabled selected>Select a Feature</option> </option>
+                        <option value="1">Diverse Book Selection</option>
+                        <option value="2">Delivery Options</option> 
+                        <option value="3">The Book Selection Process</option>
+                        <option value="4">Other</option>
+                    </select>
+                </label>
+                <label class="test" for="reccommendation"> How likely are you to reccommend to a friend, family member, or colleague?
+                    <div class="option"> <input id="definitely" class="inline" type="radio" name="reccommendation" value="definitely"> Definitely!</div>
+                   <div class="option"><input id="maybe" class="inline" type="radio" name="reccommendation" value="maybe"> Maybe. </div> 
+                    <div class="option"><input id="not-sure" class="inline" type="radio" required name="reccommendation" value="not-sure"> Not sure.
+                </label>
+                <label for="multiple-choice">What would you like to see improved? 
+                    <div class="option"><input class="inline" id="multiple-choice" type="checkbox" value="delivery"> Delivery</div>
+                    <div class="option"></divclass><input class="inline" id="multiple-choice" type="checkbox" value="book-selection"> Book Selection</div>
+                    <div class="option"><input class="inline" id="multiple-choice" type="checkbox" value="exclusivity"> Exclusivity</div>
+                    <div class="option"><input class="inline" id="multiple-choice" type="checkbox" value="customer-service"> Customer Service</div>
+                </label>
+                <label for="comments">Any additional comments?<textarea name="comments" cols="30" rows="5" placeholder="Write your comment here..."></textarea></label>
+                <button class="submit" id="submit">Submit</button>
+               
+                </form>
+            </main>
+           
+        </div>
+    </body>
+    
+</html>
